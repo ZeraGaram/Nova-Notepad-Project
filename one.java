@@ -10,17 +10,20 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.Iterator;
 
+/// i made this on March 14 ,2026 i built everything expect the file jmenubar. i used the logic for snake,flippy bird is orignally from youtube. 
+// i also added some notes for myself to understand when i read this again.
+// this is an anime themed notepad with background and music
 public class one {
 	static JFrame Window = new JFrame();
 	static JTextArea textplace;
 	static JMenuBar content;
 	static JMenu File,Format,Colour,Album,Font,Games;
-	static JMenuItem Newfile,Savefile,Openfile; //file
-	static JMenuItem White,Black,Red,Green,Pink; //color
-	static JMenuItem s1,s2,s3; //album
-	static JMenuItem f1,f2,f3; //font color
-	static JMenuItem g1,g2,g3,g4,g5,g6; // games
-	static JMenuItem toUpper,toLower;
+	static JMenuItem Newfile,Savefile,Openfile; //file menu
+	static JMenuItem White,Black,Red,Green,Pink; //color menu
+	static JMenuItem s1,s2,s3; //album menu 
+	static JMenuItem f1,f2,f3; //font color menu
+	static JMenuItem g1,g2,g3,g4,g5,g6; // games menu
+	static JMenuItem toUpper,toLower; //format menu
 	
 	
 	static JLabel background;
@@ -29,7 +32,7 @@ public class one {
 	public static void playMusic(String location) {
 	    try {
 	        if(clip != null) {
-	            clip.stop(); // stop previous music
+	            clip.stop(); // stop previous music (this stop last music gahhh)
 	        }
 
 	        File file = new File(location);
@@ -151,7 +154,7 @@ public class one {
 		textplace = new JTextArea();
 		textplace.setLineWrap(false); 
 		textplace.setWrapStyleWord(true); 
-		textplace.setBounds(0,0,1000,800);   // IMPORTANT
+		textplace.setBounds(0,0,1000,800);   // IMPORTANT(don't forget if i am watching this again this is for setting bounds if you don't have this the image behind the notepad don't appear)
 		textplace.setOpaque(false); 
 	
 		// scroll stuffs
@@ -204,7 +207,6 @@ public class one {
 		});
 		
 		//music click
-		//music click
 		s1.addActionListener(e -> {
 		    playMusic("overdose.wav");
 		    changeBackground("kobo three.png");
@@ -248,7 +250,7 @@ public class one {
 		// File menu functionality
 		Newfile.addActionListener(e -> {
 		    textplace.setText("");            // clear all text
-		    changeBackground("images.png");   // reset background if you want
+		    changeBackground("images.png");   // reset background
 		});
 
 		Savefile.addActionListener(e -> {
@@ -294,6 +296,7 @@ public class one {
 		    textplace.setText(textplace.getText().toLowerCase());
 		});
 
+		//this shit is for number guessing game
 		g1.addActionListener(e -> {
 		    int min = 1, max = 100;
 		    int target = (int)(Math.random() * (max - min + 1) + min);
@@ -302,7 +305,7 @@ public class one {
 		    while(!guessed) {
 		        String input = JOptionPane.showInputDialog(Window, 
 		            "Guess a number between " + min + " and " + max + ":");
-		        if(input == null) break; // user pressed cancel
+		        if(input == null) break; 
 		        try {
 		            int guess = Integer.parseInt(input);
 		            if(guess < target) {
@@ -319,6 +322,7 @@ public class one {
 		    }
 		});
 		
+		//and this is for rolling dice
 		g2.addActionListener(e -> {
 		    JFrame diceFrame = new JFrame("Dice Roll");
 		    diceFrame.setSize(400, 400);
@@ -365,8 +369,7 @@ public class one {
 		});
 		
 	}
-	// Add this class below your main one class
-	// Make SnakeGame static
+	
 	static class SnakeGame extends JFrame {
 	    private int width = 300, height = 300, unit = 15;
 	    private int[] snakeX = new int[100];
@@ -493,7 +496,7 @@ public class one {
 	        this.setResizable(false);
 	        this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 
-	        // Load images (place them in your project folder)
+	        // Load images 
 	        backgroundImg = new ImageIcon("bg.png").getImage().getScaledInstance(400, 600, Image.SCALE_SMOOTH);
 	        birdImg = new ImageIcon("bird.png").getImage().getScaledInstance(40, 30, Image.SCALE_SMOOTH);
 	        pipeImg = new ImageIcon("pipe.png").getImage().getScaledInstance(50, 600, Image.SCALE_SMOOTH);
@@ -589,7 +592,7 @@ public class one {
 	        });
 	        timer.start();
 
-	        // Place towers on click
+	        // this is mouse listener to add towers
 	        panel.addMouseListener(new MouseAdapter() {
 	            public void mousePressed(MouseEvent e) {
 	                towers.add(new Tower(e.getX(), e.getY()));
