@@ -10,7 +10,7 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-/// i made this on March 14 ,2026 i built everything expect the file jmenubar. i used the logic for snake,flippy bird is orignally from youtube. 
+/// i made this from Feb 21 to March 14 ,2026 i built everything expect the file jmenubar. i used the logic for snake,flippy bird is orignally from youtube. 
 // i also added some notes for myself to understand when i read this again.
 // this is an anime themed notepad with background and music
 public class one {
