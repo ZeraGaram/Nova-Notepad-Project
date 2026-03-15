@@ -7,7 +7,7 @@
 ## 📸 NotePad Preview
 
 <p align="center">
-  <img src="images/app-Screenshot 2026-03-16 014828.png" width="850"/>
+  <img src="Nova.png" width="850"/>
 </p>
 
 ## 📈 3D Contribution Graph
