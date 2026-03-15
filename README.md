@@ -7,7 +7,7 @@
 ## 📈 3D Contribution Graph
 
 <p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=yourusername&theme=tokyonight"/>
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=ZeraGaram&theme=tokyonight"/>
 </p>
 
 ## 🧰 Skills
@@ -21,10 +21,10 @@
 ## 👀 Visitors
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=yourusername&label=Profile%20views&color=blueviolet&style=for-the-badge"/>
+  <img src="https://komarev.com/ghpvc/?username=ZeraGaram&label=Profile%20views&color=blueviolet&style=for-the-badge"/>
 </p>
 
 <p align="center">
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=250&section=header&text=Welcome%20to%20My%20GitHub&fontSize=50&animation=fadeIn"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=250&section=header&text=Chilling%20my%20Life%20Peacefully&fontSize=50&animation=fadeIn"/>
 </p>
 
