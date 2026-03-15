@@ -1,7 +1,13 @@
 ## 🐍 Contribution Snake
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/yourusername/yourusername/output/github-contribution-grid-snake.svg"/>
+  <img src="https://raw.githubusercontent.com/ZeraGaram/ZeraGaram/output/github-contribution-grid-snake.svg"/>
+</p>
+
+## 📸 NotePad Preview
+
+<p align="center">
+  <img src="images/app-Screenshot 2026-03-16 014828.png" width="850"/>
 </p>
 
 ## 📈 3D Contribution Graph
